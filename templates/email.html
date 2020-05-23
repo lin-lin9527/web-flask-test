@@ -1,0 +1,28 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>gg</title>
+<style>
+.error {color: #8B0000;}
+body
+{
+    background-color:#d0e4fe;
+}
+
+</style>
+</head>
+<body>
+   <form method="POST" action="/api/message">
+   寄件人: <input type="text" name="email1">
+   <br><br>
+   收件人: <input type="text" name="email2">
+   <br><br>
+   標題: <br><textarea name="title" rows="1" cols="20"></textarea>
+   <br><br>
+   內容: <br><textarea name="comment" rows="5" cols="30"></textarea>
+   <br><br>
+   <input type="submit" name="submit" value="Submit"> 
+    </form>
+</body>
+</html>

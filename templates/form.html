@@ -1,0 +1,47 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta charset="utf-8">
+<title>my_web_site_file</title>
+<style>
+.error {color: #8B0000;}
+body
+{
+    background-color:#d0e4fe;
+}
+
+</style>
+</head>
+<body>
+  <div id="linkweb">
+  </div>
+  <script>setInterval("linkweb.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+  </script>
+  <br><br>
+   <form method="POST" action="/api">
+   username: <input type="text" name="username">
+   <span class="error">*</span>
+   <br><br>
+   password: <input type="password" name="password">
+   <span class="error">*</span>
+   <br><br>
+   
+   <input type="submit" name="submit" value="登入"> 
+   <br><br>
+   </form>
+
+   <form method = "GET" action="/api/register">
+    <input type="submit" name="submit" value="創建帳號"> 
+    <br><br>
+   </form>
+   <form method = "GET" action="/api/update">
+    <input type="submit" name="gg" value="修改密碼"> 
+    <br><br>
+  </form>
+  <form method = "GET" action="/api/upload">
+    <input type="submit" name="submit" value="上傳圖片"> 
+    <br><br>
+  </form>
+</body>
+</html>
