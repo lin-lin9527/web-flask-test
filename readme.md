@@ -18,7 +18,3 @@ python .py db migrate
 pyhthon .py db upgrade
 
 
-
-database 
-admin link1557
-link9527 123456789
